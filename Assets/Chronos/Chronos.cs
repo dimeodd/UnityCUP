@@ -36,15 +36,16 @@ public class RealChronos
 
     event Action event_WorldUpdate = delegate { };
     event Action event_WorldIEnumer = delegate { };
-    event Action event_WorldFixedUpdate;
+    event Action event_WorldFixedUpdate = delegate { };
     event Action event_UiUpdate = delegate { };
+    event Action event_RoutineWorldUpdate = delegate { };
 
     public void MainChronoUpdate()
     {
         if (WorldIsMove)
         {
-            event_WorldUpdate();
             event_WorldIEnumer();
+            event_WorldUpdate();
         }
 
         event_UiUpdate();
@@ -52,7 +53,7 @@ public class RealChronos
 
     public void MainChronoFixedUpdate()
     {
-        if (WorldIsMove & event_WorldUpdate != null)
+        if (WorldIsMove)
             event_WorldFixedUpdate();
     }
 
@@ -86,5 +87,14 @@ public class RealChronos
     public void RemoveUiUpdate(Action listner)
     {
         event_UiUpdate += listner;
+    }
+
+    public void AddWorldIEnumer(Action listner)
+    {
+        event_WorldIEnumer += listner;
+    }
+    public void RemoveWorldIEnumer(Action listner)
+    {
+        event_WorldIEnumer += listner;
     }
 }

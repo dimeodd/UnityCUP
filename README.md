@@ -1,7 +1,7 @@
 # UnityCUP
 Custom Update Pipeline project for Unity3d
 
-You can optimise your Unity project with it
+You can optimise(~40%) your Unity project with it 
 
 Just replace:
 MonuBehaviour -> ChronoBehaviour

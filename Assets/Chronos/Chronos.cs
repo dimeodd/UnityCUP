@@ -7,23 +7,13 @@ public class Chronos : MonoBehaviour
 {
     public static RealChronos Main { get; private set; } = new RealChronos();
 
-    [SerializeField] GameObject prefab;
-
-    private void Start()
-    {
-        for (int i = 0; i < 10000; i++)
-        {
-            Instantiate(prefab);
-        }
-    }
-
-    bool al;
+    bool isMove;
 
     [ContextMenu("Switch Time")]
     void Switch()
     {
-        Main.SetTimeline(al);
-        al = !al;
+        Main.SetTimeline(isMove);
+        isMove = !isMove;
     }
 
     void Update() => Main.MainChronoUpdate();

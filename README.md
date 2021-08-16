@@ -1,7 +1,8 @@
 # UnityCUP
-Custom Update Pipeline project for Unity3d
+Custom Unity Pause<br>
+"Pause the game without timeScale"
 
-You can optimise(~40%) your Unity project with it 
+Include optimisation(~40%) for your Unity project
 
 Just replace:<br>
 MonoBehaviour -> ChronoBehaviour<br>

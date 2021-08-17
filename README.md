@@ -8,4 +8,4 @@ Just replace:<br>
 MonoBehaviour -> ChronoBehaviour<br>
 "void Update" -> "override void ChronoUpdate()"<br>
 "void FixedUpdate" -> "override void ChronoFixedUpdate()"<br>
-"void Start" -> "ChronoStart"
+"void Start" -> "override void ChronoStart"

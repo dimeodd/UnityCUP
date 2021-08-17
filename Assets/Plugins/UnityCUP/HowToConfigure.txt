@@ -1,0 +1,10 @@
+to add ChronoScript to AssetMenu on RightMouseButton (Assets/Create/C# Chrono Script)
+Add this file* to this folder**.
+
+*  - Assets/Plugins/UnityCUP/Editor/81-C# Chrono Script-NewChronoScript.cs.txt
+
+** - %UNITY_ENGINE_PATH%\Data\Resources\ScriptTemplates
+or
+C:\Program Files\Unity\Hub\Editor\<UNITY_VERSION>\Editor\Data\Resources\ScriptTemplates
+
+links: https://support.unity.com/hc/en-us/articles/210223733-How-to-customize-Unity-script-templates

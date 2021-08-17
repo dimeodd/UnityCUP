@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using CUP;
+
+public class #SCRIPTNAME# : ChronoBehaviour
+{
+    // ChronoStart is called before the first frame update
+    protected override void ChronoStart()
+    {
+        #NOTRIM#
+    }
+
+    // ChronoUpdate is called once per frame
+    protected override void ChronoUpdate()
+    {
+        #NOTRIM#
+    }
+
+    // ChronoFixedUpdate is called every FixedUpdate
+    protected override void ChronoFixedUpdate()
+    {
+        #NOTRIM#
+    }
+}

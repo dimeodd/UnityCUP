@@ -1,6 +1,6 @@
 # UnityCUP
 Custom Unity Pause<br>
-"Pause the game without timeScale"
+<i>Pause the game without timeScale</i>
 
 Include optimisation(~40%) for your Unity project
 
